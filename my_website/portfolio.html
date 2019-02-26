@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family:  "Courier New", Courier, monospace;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FDFDFD;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #7A7271;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #CAF3BD;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="index.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Resume</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="tricksandstrategies.html">Tips and Strategies</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+     
+</body>
+
+<!doctype html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <title>Portfolio</title>
+	  </head>
+	  <body>
+    <center><h1>My Portfolio!</h1></center>
+    <center><p>Scratch</p></center>
+    <a target="_blank" href="https://scratch.mit.edu">
+      <center><img src="images/scratch_logo.png" alt="picture of the scratch logo" height="100"></center>
+    </a>
+	  </body>
+	</html>
+	<br>
+	<center><a target="_blank" href="https://scratch.mit.edu/projects/245669848/ "> 1st Scratch Game </a></center>
+	<br>
+	<center><a target="_blank" href="https://scratch.mit.edu/projects/247056363/"> 2nd Scratch Game </a></center>
+	 <center><p>MIT App Inventor</p></center>
+			<center><img src="images/MIT.png" alt="picture of the MIT App Inventor logo" height="100"></center>
+	<center><a target="_blank" href="http://ai2.appinventor.mit.edu/?galleryId=5084099636232192"> MIT App Inventor Game </a></center>
+ <center><p>Python</p></center>
+		<center><img src="images/python.jpg" alt="picture of the Python logo" height="100"></center>
+	<center><a target="_blank" href="https://repl.it/@MakenaArmstrong/-3"> Python Interactive Story </a></center>
+<body bgcolor="#CAF3BD" body></body>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family:  "Courier New", Courier, monospace;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FDFDFD;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #7A7271;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ECF0B3;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="index.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Resume</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="tricksandstrategies.html">Tips and Strategies</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+     
+</body>
+
+     
+</body>
+</div>
+<html lang="en">
+<div class="content">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+    <center><h1>Home</h1></center>
+    <center><button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo">Welcome to my website!</p>
+<p id="demo"></p>
+<button type="button" onclick="document.getElementById(&quot;demo&quot;).innerHTML = &quot;Welcome to my website!&quot;">Click Me!</button></center>
+<body bgcolor="ECF0B3" body></body>
+<br>
+<center><img src="images/coronado.jpg" alt="picture of coronado; This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported, 2.5 Generic, 2.0 Generic and 1.0 Generic license.
+https://commons.wikimedia.org/wiki/File:Hotel_del_Coronado_01.jpg" height="150"></center>
